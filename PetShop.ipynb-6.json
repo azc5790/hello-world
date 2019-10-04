@@ -1,0 +1,53 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Pet Shop ER Diagram"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "At the shop there are two types of animals followed by their environments.  The fish are kept in aquariums and have a variety of attributes which include their species, size and color. The  enclosure where the pets are kept  are dependant on the location and occupancy where their attributes are type, age, weight and color. Together, the fish are related one-to-one to the aquarium as the pets are to the enclosure. In addition, the food transactions consist of two foreign keys, food barcode and customer ID, as well as two attributes, price and quantity. The customer ID is related to food transactions with a one to many relationship, due to there being one customer for potentially many transactions. Food transactions are related to food barcode with a many to many relationship. This is because there are numerous transactions that contain several possible food options that all have different prices and shelf locations. The expense report captures the food fed to pets and fish respectively (not purchased by customers). It accounts for the food barcode, the price (expense), and amount used. For customers, there is a loyalty program. The loyalty program can be used for the animal transactions or the food transactions. The primary key for the loyalty program table is CustomerID. When purchasing food or animals, the CustomerID key is required and is considered a foreign key in food transactions and animal transactions. The loyalty program contains the customer's information such as their first and last name, points, email, and date of birth. The relationship between the customer and the food transaction, and the relationship between the customer and animal transaction are the same: one to many. Within animal transactions, one customer can purchase zero to many pets and/or zero to many fish, since they may purchase any combination of each animal type."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "![Alt Text](https://github.com/azc5790/hello-world/blob/master/Pet%20Shop%20ER%20Diagram.jpg?raw=true)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
